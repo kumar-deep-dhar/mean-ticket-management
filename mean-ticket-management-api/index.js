@@ -26,7 +26,7 @@ db.once("open", function () {
   console.log("Connected to MongoDB");
 });
 
-// Import routes
+
 const ticketRoutes = require("./routes/ticketRoutes");
 const teamRoutes = require("./routes/teamRoutes");
 const engineerRoutes = require("./routes/engineerRoutes");
@@ -34,12 +34,12 @@ const engineerRoutes = require("./routes/engineerRoutes");
 const { authorizeTeamAccess } = require("./Middleware/authMiddleware");
 const { validateTicketCreation } = require("./Middleware/ticketMiddleware");
 
-// Apply middleware to all routes under /api/tickets, /api/teams, /api/engineers
+
 app.use("/api/tickets*", authorizeTeamAccess);
 app.use("/api/teams*", authorizeTeamAccess);
 app.use("/api/engineers*", authorizeTeamAccess);
 
-// Use routes
+
 app.use("/api/tickets", ticketRoutes);
 app.use("/api/teams", teamRoutes);
 app.use("/api/engineers", engineerRoutes);
@@ -49,7 +49,7 @@ app.use((err, req, res, next) => {
   res.status(500).send("Something went wrong!");
 });
 
-// 404 Not Found middleware
+
 app.use((req, res) => {
   res.status(404).send("Not Found");
 });
