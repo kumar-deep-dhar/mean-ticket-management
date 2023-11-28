@@ -1,0 +1,36 @@
+paths:
+  /api/tickets/update-status:
+    patch:
+      summary: Update ticket status
+      parameters:
+        - in: query
+          name: ticketId
+          schema:
+            type: string
+          required: true
+          description: ID of the ticket to update
+        - in: query
+          name: status
+          schema:
+            type: string
+          required: true
+          description: New status for the ticket
+      responses:
+        "200":
+          description: Ticket status updated successfully
+          content:
+            application/json:
+              example:
+                message: Ticket status updated successfully
+        "404":
+          description: Ticket not found
+          content:
+            application/json:
+              example:
+                error: Ticket not found
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              example:
+                error: Internal Server Error

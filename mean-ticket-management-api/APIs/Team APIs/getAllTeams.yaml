@@ -1,0 +1,23 @@
+paths:
+  /api/teams/get:
+    get:
+      summary: Get all teams
+      responses:
+        "200":
+          description: Teams retrieved successfully
+          content:
+            application/json:
+              example:
+                message: Teams retrieved successfully
+        "404":
+          description: No teams found
+          content:
+            application/json:
+              example:
+                error: No teams found
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              example:
+                error: Internal Server Error

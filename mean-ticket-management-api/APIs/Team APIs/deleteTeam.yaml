@@ -1,0 +1,30 @@
+paths:
+  /api/teams/delete/{teamId}:
+    delete:
+      summary: Delete a team
+      parameters:
+        - in: path
+          name: teamId
+          schema:
+            type: string
+          required: true
+          description: ID of the team to delete
+      responses:
+        "200":
+          description: Team deleted successfully
+          content:
+            application/json:
+              example:
+                message: Team deleted successfully
+        "404":
+          description: Team not found
+          content:
+            application/json:
+              example:
+                error: Team not found
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              example:
+                error: Internal Server Error

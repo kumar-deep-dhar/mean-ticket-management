@@ -1,0 +1,30 @@
+paths:
+  /api/tickets/search:
+    get:
+      summary: Search for tickets
+      parameters:
+        - in: query
+          name: query
+          schema:
+            type: string
+          required: true
+          description: Search query
+      responses:
+        "200":
+          description: Tickets found successfully
+          content:
+            application/json:
+              example:
+                message: Tickets found successfully
+        "404":
+          description: No tickets found
+          content:
+            application/json:
+              example:
+                error: No tickets found
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              example:
+                error: Internal Server Error

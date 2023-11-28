@@ -1,0 +1,36 @@
+paths:
+  /api/teams/{teamId}/assign-engineer/{engineerId}:
+    patch:
+      summary: Assign engineer to team
+      parameters:
+        - in: path
+          name: teamId
+          schema:
+            type: string
+          required: true
+          description: ID of the team to which the engineer will be assigned
+        - in: path
+          name: engineerId
+          schema:
+            type: string
+          required: true
+          description: ID of the engineer to be assigned
+      responses:
+        "200":
+          description: Engineer assigned to team successfully
+          content:
+            application/json:
+              example:
+                message: Engineer assigned to team successfully
+        "404":
+          description: Team or engineer not found
+          content:
+            application/json:
+              example:
+                error: Team or engineer not found
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              example:
+                error: Internal Server Error

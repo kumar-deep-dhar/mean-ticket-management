@@ -1,0 +1,23 @@
+paths:
+  /api/teams/shuffle-members:
+    patch:
+      summary: Shuffle team members
+      responses:
+        "200":
+          description: Team members shuffled successfully
+          content:
+            application/json:
+              example:
+                message: Team members shuffled successfully
+        "404":
+          description: Team not found
+          content:
+            application/json:
+              example:
+                error: Team not found
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              example:
+                error: Internal Server Error
