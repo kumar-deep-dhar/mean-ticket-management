@@ -33,3 +33,21 @@ Supervisor should have facility to filter the tickets to see the open, non-close
 ## Pages
 ### Landing Page
 ![landingpage](https://github.com/kumar-deep-dhar/mean-ticket-management-application/assets/68948695/3f4f78c0-2c0c-4ff9-b6e1-610a19a0d725)
+
+### Admin Dashboard
+![adminlandingpage](https://github.com/kumar-deep-dhar/mean-ticket-management-application/assets/68948695/e42f1770-c6a4-4c60-81b1-e0f155a55b03)
+
+#### Create Team
+![createteam](https://github.com/kumar-deep-dhar/mean-ticket-management-application/assets/68948695/6d17706f-ce82-4694-b7ba-e5e587712f9c)
+
+### Call Center Dashboard
+![callcenterdashboard](https://github.com/kumar-deep-dhar/mean-ticket-management-application/assets/68948695/a8c838f9-6eac-4b0e-a722-393c423cb27a)
+
+#### Create Ticket
+![createticket](https://github.com/kumar-deep-dhar/mean-ticket-management-application/assets/68948695/0fde57c9-6910-4e1e-87b4-0036e7cc2b94)
+
+#### Active Tickets List
+![activetickets](https://github.com/kumar-deep-dhar/mean-ticket-management-application/assets/68948695/69fbcfbe-5d61-40d8-badc-f9b70c722485)
+
+#### Ticket List After Closing One Ticket
+![afterclosingoneticket](https://github.com/kumar-deep-dhar/mean-ticket-management-application/assets/68948695/663aee2e-9d46-40ff-9937-13b176605161)
