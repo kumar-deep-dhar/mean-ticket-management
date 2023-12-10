@@ -1,0 +1,66 @@
+@keyframes moveAround {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.welcome-text {
+  animation: moveAround 3s infinite;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(
+    193,
+    174,
+    124
+  ); /* Use the second color from the palette */
+  background: linear-gradient(to right, #c1ae7c, #e16f7c, #dd5e98, #cc4bc2, #6c3a5c);
+
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 20px;
+    color:rgb(
+            108,
+            58,
+            92
+          )
+  }
+
+  .buttons {
+    display: flex;
+    gap: 20px;
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      background-color: rgb(
+        108,
+        58,
+        92
+      );
+      color: #c1ae7c;
+      border: none;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: rgb(
+          204,
+          75,
+          194
+        );
+      }
+    }
+  }
+}

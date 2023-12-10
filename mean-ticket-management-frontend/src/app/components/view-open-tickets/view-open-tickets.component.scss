@@ -1,0 +1,29 @@
+.tickets-container {
+  padding: 20px;
+  background-color: #c1ae7c;
+  color: #ffffff;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.ticket-details {
+  margin-bottom: 10px;
+
+  p {
+    margin: 5px 0;
+  }
+
+  button {
+    background-color: #e16f7c;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #dd5e98;
+    }
+  }
+}
+

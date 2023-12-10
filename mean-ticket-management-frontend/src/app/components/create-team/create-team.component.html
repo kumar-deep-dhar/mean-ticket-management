@@ -1,0 +1,19 @@
+<div class="create-team">
+  <h2>Create Team</h2>
+  <form [formGroup]="teamForm" (ngSubmit)="onSubmit()">
+    <label for="name">Team Name:</label>
+    <input type="text" id="name" formControlName="name" required />
+
+    <label for="supervisor">Supervisor:</label>
+      <input type="text" id="supervisor" formControlName="supervisor" required>
+
+    <!-- <label for="engineers">Engineers:</label>
+    <select multiple id="engineers" formControlName="engineers" required>
+      <option *ngFor="let engineer of engineers" [value]="engineer.id">
+        {{ engineer.name }}
+      </option> 
+    </select> -->
+
+    <button type="submit">Create Team</button>
+  </form>
+</div>

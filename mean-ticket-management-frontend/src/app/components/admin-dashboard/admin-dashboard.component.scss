@@ -1,0 +1,41 @@
+.admin-dashboard {
+    background: linear-gradient(45deg, #c1ae7c, #e16f7c, #dd5e98, #cc4bc2, #6c3a5c);
+    //background: #c1ae7c; /* Use primary color from your palette */
+  color: #c1ae7c; /* Text color */
+  padding: 20px;
+  text-align: center;
+  height: 75vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+    h2 {
+      text-align: center;
+    }
+  
+    .button-container {
+      display: flex;
+      justify-content: space-around;
+  
+      button {
+        background:rgb(
+          108,
+          58,
+          92); 
+        color: #c1ae7c;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+  
+        &:hover {
+          background: #dd5e98; /* Use another color from your palette on hover */
+        }
+        &:not(:last-child) {
+          margin-right: 10px;
+      }
+    }
+  }
+}

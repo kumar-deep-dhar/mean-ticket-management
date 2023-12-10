@@ -1,0 +1,20 @@
+
+<div class="tickets-container">
+  <h2>Open Tickets</h2>
+
+  <div *ngFor="let ticket of openTickets">
+    <div class="ticket-details">
+      <p>Name: {{ ticket.name }}</p>
+      <p>Mobile Number: {{ ticket.mobileNumber }}</p>
+      <button (click)="closeTicket(ticket._id)">Close Ticket</button>
+    </div>
+    <hr />
+  </div>
+</div> 
+
+<!-- ticket-list.component.html -->
+
+<!-- <div *ngFor="let ticket of openTickets">
+  {{ ticket.name }}
+  <button (click)="closeTicket(ticket._id)">Close</button>
+</div> -->
