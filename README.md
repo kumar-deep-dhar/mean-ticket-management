@@ -29,3 +29,7 @@ Supervisor should have facility to filter the tickets to see the open, non-close
 17) Supervisor should be able to search a ticket by Mobile number, Name, ticket number.
 18) Supervisor should be able to see all the engineers under his team and filter by engineer or work status.
 19) Supervisor should not see the other teams. He can search a ticket that belongs to other teams.
+
+## Pages
+### Landing Page
+![landingpage](https://github.com/kumar-deep-dhar/mean-ticket-management-application/assets/68948695/3f4f78c0-2c0c-4ff9-b6e1-610a19a0d725)
