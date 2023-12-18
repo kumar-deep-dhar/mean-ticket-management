@@ -26,29 +26,27 @@ db.once("open", function () {
   console.log("Connected to MongoDB");
 });
 
-
 const ticketRoutes = require("./routes/ticketRoutes");
 const teamRoutes = require("./routes/teamRoutes");
 const engineerRoutes = require("./routes/engineerRoutes");
+const userRoutes = require("./routes/userRoutes");
 
 const { authorizeTeamAccess } = require("./Middleware/authMiddleware");
 const { validateTicketCreation } = require("./Middleware/ticketMiddleware");
-
 
 app.use("/api/tickets*", authorizeTeamAccess);
 app.use("/api/teams*", authorizeTeamAccess);
 app.use("/api/engineers*", authorizeTeamAccess);
 
-
 app.use("/api/tickets", ticketRoutes);
 app.use("/api/teams", teamRoutes);
 app.use("/api/engineers", engineerRoutes);
+app.use("/api/auth", userRoutes);
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send("Something went wrong!");
 });
-
 
 app.use((req, res) => {
   res.status(404).send("Not Found");
@@ -56,5 +54,5 @@ app.use((req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Example app listenting at http://localhost:${port}`);;
+  console.log(`Example app listenting at http://localhost:${port}`);
 });
