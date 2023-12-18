@@ -12,6 +12,7 @@ import { CreateTeamComponent } from './components/create-team/create-team.compon
 import { CreateTicketComponent } from './components/create-ticket/create-ticket.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ViewOpenTicketsComponent } from './components/view-open-tickets/view-open-tickets.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ViewOpenTicketsComponent } from './components/view-open-tickets/view-op
     CreateTicketComponent,
     FooterComponent,
     ViewOpenTicketsComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

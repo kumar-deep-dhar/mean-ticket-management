@@ -6,6 +6,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { CreateTeamComponent } from './components/create-team/create-team.component';
 import { CreateTicketComponent } from './components/create-ticket/create-ticket.component';
 import { ViewOpenTicketsComponent } from './components/view-open-tickets/view-open-tickets.component';
+import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
   {component:CallCenterDashboardComponent,path:'call-center-dashboard'},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {component:HomepageComponent,path:''},
   {component:CreateTeamComponent,path:'create-team'},
   {component:CreateTicketComponent,path:'create-ticket'},
-  {component:ViewOpenTicketsComponent,path:'view-open-tickets'}
+  {component:ViewOpenTicketsComponent,path:'view-open-tickets'},
+  {component:RegisterComponent,path:'signup'}
 ];
 
 @NgModule({

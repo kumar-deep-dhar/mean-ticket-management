@@ -54,5 +54,5 @@ app.use((req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Example app listenting at http://localhost:${port}`);
+  console.log(`Example app listenting at http://localhost:${PORT}`);
 });
