@@ -56,5 +56,5 @@ app.use((req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Server is running on port <a href="http://localhost:${PORT}" target="_blank">http://localhost:${PORT}</a>`);
+  console.log(`Example app listenting at http://localhost:${port}`);;
 });
