@@ -31,6 +31,13 @@ Supervisor should have facility to filter the tickets to see the open, non-close
 19) Supervisor should not see the other teams. He can search a ticket that belongs to other teams.
 
 ## Pages
+
+### Signup Page
+![signup](https://github.com/kumar-deep-dhar/mean-ticket-management-application/assets/68948695/bd66f1e4-2fbc-4a48-9132-c0d0e425e390)
+
+### Login Page
+![login](https://github.com/kumar-deep-dhar/mean-ticket-management-application/assets/68948695/cca35874-ac37-41b8-b227-411dad0de524)
+
 ### Landing Page
 ![landingpage](https://github.com/kumar-deep-dhar/mean-ticket-management-application/assets/68948695/3f4f78c0-2c0c-4ff9-b6e1-610a19a0d725)
 
