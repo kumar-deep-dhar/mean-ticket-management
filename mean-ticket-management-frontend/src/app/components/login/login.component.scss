@@ -1,0 +1,41 @@
+.login-container {
+  background: #c1ae7c; 
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+
+    label {
+      margin-bottom: 8px;
+      color: #fff; 
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 16px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    button {
+      background: #e16f7c; 
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: #dd5e98; 
+      }
+    }
+  }
+}

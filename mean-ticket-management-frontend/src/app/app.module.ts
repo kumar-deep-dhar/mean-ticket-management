@@ -13,6 +13,7 @@ import { CreateTicketComponent } from './components/create-ticket/create-ticket.
 import { FooterComponent } from './components/footer/footer.component';
 import { ViewOpenTicketsComponent } from './components/view-open-tickets/view-open-tickets.component';
 import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { RegisterComponent } from './components/register/register.component';
     FooterComponent,
     ViewOpenTicketsComponent,
     RegisterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
