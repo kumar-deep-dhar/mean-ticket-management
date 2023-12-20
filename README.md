@@ -60,7 +60,7 @@ The application follows a three-tier architecture:
 ## Getting Started
 
 1. **Installation:**
-   - Clone the repository: `git clone [repository_url]`
+   - Clone the repository: `git clone https://github.com/kumar-deep-dhar/mean-ticket-management-application.git`
    - Navigate to the project directory: `cd ticket-management-application`
 
 2. **Setting Up:**
