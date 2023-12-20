@@ -1,34 +1,88 @@
 # Ticket Management Application
 
-## Requirement List for a new software
+## Overview
 
-ACME Sales and Repairs want to implement a ticket resolving system. A Ticket can be either a new connection or repair an existing connection.
+The Ticket Management Application is a comprehensive solution designed for ACME Sales and Repairs to efficiently handle customer requests, manage ticket workflows, and streamline team collaboration. The system encompasses a variety of features catering to call center employees, engineers, supervisors, and administrators.
 
-A user calls the call-center to raise a ticket. The ticket is then assigned to backend engineers by their supervisor. Engineers can update the status of the ticket like Accepted, On the way, work in progress, rejected, completed etc. Once completed or rejected, the ticket is removed from engineer's queue.
+## Features and Highlights
 
-## Work Flow
+### 1. Ticket Creation and Management
 
-1) A call center employee will be the one to create the tickets. Data collected will be Name, address with pin, mobile number and email.
-2) A ticket can be of only be of two flavor, New or Repair.
-3) There cannot be 2 Tickets with the same phone number. If the same customer calls, the old ticket has to be closed and then only new one can be created.
-4) Call center guy should have facility to search for ticket by Name, mobile number, email or ticket number.
-5) If a ticket is found, it should have the work update along with date and time.
-6) System should not allow additional ticket on the same mobile number, if the existing one is not closed.
-7) Only a call-center guy can close the ticket, by calling the customer on their mobile number.
-8) Call-center guy should have facility to see the tickets which are not yet closed.
-Every engineer should belong to a team, headed by a supervisor.
-9) New joinee engineers belong to free pool team.
-10) Supervisor can see the list of engineers assigned to him. He cannot rename , modify or delete a team.
-11) Supervisor can assign non-closed or rejected tickets to engineers. He should have a facility to see available tickets.
-Supervisor should have facility to filter the tickets to see the open, non-closed tickets. Closed tickets may not be shown.
-12) Admin is the person who can create, rename, delete or modify a Team.
-13) Admin can shuffle the engineers, supervisors from one team to another.
-14) Admin should have facility to see engineers (assigned/unassigned), team details etc. He should be able to filter the list.
-15) Engineers can have 5 tickets in a queue in a day. They can reject one ticket per day. This has to be configurable by admin.
-16) Engineers should be able to update the status of the ticket to Accepted, Rejected, On the way, work in progress and completed.
-17) Supervisor should be able to search a ticket by Mobile number, Name, ticket number.
-18) Supervisor should be able to see all the engineers under his team and filter by engineer or work status.
-19) Supervisor should not see the other teams. He can search a ticket that belongs to other teams.
+- Call center employees can create new tickets for both new connections and repairs.
+- Duplicate ticket prevention ensures only one active ticket per customer's phone number.
+- Detailed work updates and statuses are tracked for each ticket.
+
+### 2. Search and Work Updates
+
+- Call center employees have the ability to search for tickets based on various criteria.
+- Real-time work updates, including date and time stamps, provide a comprehensive view of ticket progress.
+
+### 3. Ticket Closure
+
+- Exclusive ticket closure rights for call center employees, facilitating customer communication for ticket resolution.
+- Dedicated view for call center employees to manage and close open tickets.
+
+### 4. Engineer and Team Management
+
+- Engineers are assigned to teams, initially belonging to a free pool team.
+- Supervisors manage teams, ensuring efficient distribution of tickets among engineers.
+- Admins have granular control over team creation, modification, and deletion.
+
+### 5. Admin Functionality
+
+- Admins oversee the entire system, with the authority to manage teams, engineers, and supervisors.
+- Flexibility for admins to reassign resources and configure system parameters.
+
+### 6. Ticket Assignment and Status Updates
+
+- Engineers handle a specified number of tickets daily, with the ability to reject one ticket per day.
+- Status updates include "Accepted," "Rejected," "On the way," "Work in progress," and "Completed."
+
+### 7. Supervisor Features
+
+- Supervisors have access to tools for efficient ticket management within their teams.
+- Search functionality for tickets based on mobile number, name, or ticket number.
+- View of engineers under their supervision, with filters for work status.
+
+## Architecture and Implementation
+
+The application follows a three-tier architecture:
+
+- **Frontend:** Developed using Angular, offering a responsive and intuitive user interface.
+- **Backend:** Powered by Node.js and Express, providing robust server-side functionality.
+- **Database:** MongoDB is employed for efficient data storage and retrieval.
+
+## Security Measures
+
+- **Authentication:** Implemented using JSON Web Tokens (JWT) to ensure secure access based on user roles.
+- **Password Security:** Passwords are hashed and dehashed to prevent unauthorized access and ensure data integrity.
+
+## Getting Started
+
+1. **Installation:**
+   - Clone the repository: `git clone [repository_url]`
+   - Navigate to the project directory: `cd ticket-management-application`
+
+2. **Setting Up:**
+   - Install dependencies for the frontend and backend:
+     - Frontend: `cd frontend && npm install`
+     - Backend: `cd backend && npm install`
+
+3. **Running the Application:**
+   - Start the frontend and backend servers:
+     - Frontend: `cd frontend && ng serve`
+     - Backend: `cd backend && npm start`
+
+4. **Access the Application:**
+   - Open your web browser and go to `http://localhost:4200/` to access the application.
+
+## Technologies Used
+
+- **Frontend:** Angular
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
+- **Authentication:** JSON Web Tokens (JWT)
+
 
 ## Authentication
 
@@ -103,3 +157,16 @@ Supervisor should have facility to filter the tickets to see the open, non-close
 
 #### Ticket List After Closing One Ticket
 ![afterclosingoneticket](https://github.com/kumar-deep-dhar/mean-ticket-management-application/assets/68948695/663aee2e-9d46-40ff-9937-13b176605161)
+
+
+## Contributors
+
+- [Kumar Deep Dhar]
+
+## License
+
+This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details.
+
+---
+
+Feel free to enhance this README file based on specific project details, contributing guidelines, or any other relevant information.
