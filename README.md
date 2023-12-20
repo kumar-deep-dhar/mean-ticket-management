@@ -163,10 +163,6 @@ The application follows a three-tier architecture:
 
 - Kumar Deep Dhar
 
-## License
-
-This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details.
-
 ---
 
 Feel free to enhance this README file based on specific project details, contributing guidelines, or any other relevant information.
