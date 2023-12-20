@@ -34,7 +34,7 @@ Supervisor should have facility to filter the tickets to see the open, non-close
 
 ### User Registration:
 
-- **Endpoint:** `/api/register`
+- **Endpoint:** `/api/signup`
 - **Method:** `POST`
 - **Description:** Allows users to register by providing necessary details.
 
