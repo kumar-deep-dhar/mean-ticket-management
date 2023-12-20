@@ -164,5 +164,3 @@ The application follows a three-tier architecture:
 - Kumar Deep Dhar
 
 ---
-
-Feel free to enhance this README file based on specific project details, contributing guidelines, or any other relevant information.
