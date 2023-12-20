@@ -30,6 +30,51 @@ Supervisor should have facility to filter the tickets to see the open, non-close
 18) Supervisor should be able to see all the engineers under his team and filter by engineer or work status.
 19) Supervisor should not see the other teams. He can search a ticket that belongs to other teams.
 
+## Authentication
+
+### User Registration:
+
+- **Endpoint:** `/api/register`
+- **Method:** `POST`
+- **Description:** Allows users to register by providing necessary details.
+
+#### Flow:
+
+1. The client sends a registration request to the server.
+2. The server hashes the password and stores user details in the database.
+
+### User Login:
+
+- **Endpoint:** `/api/login`
+- **Method:** `POST`
+- **Description:** Allows users to log in and receive a JWT for authentication.
+
+#### Flow:
+
+1. The client sends a login request with user credentials.
+2. The server validates credentials and issues a JWT.
+3. The client stores the JWT for subsequent authenticated requests.
+
+### Authenticated Requests:
+
+- **Description:** All subsequent requests requiring authentication should include the JWT in the headers.
+
+#### Flow:
+
+1. The client includes the JWT in request headers.
+2. The server verifies the JWT, extracts user information, and proceeds accordingly.
+
+### Role-Based Authorization:
+
+- **Description:** Certain routes or endpoints may have role-based access control.
+
+#### Flow:
+
+1. The server checks the user's role embedded in the JWT.
+2. Access is granted or denied based on the user's role.
+
+
+
 ## Pages
 
 ### Signup Page
