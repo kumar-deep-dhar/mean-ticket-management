@@ -161,7 +161,7 @@ The application follows a three-tier architecture:
 
 ## Contributors
 
-- [Kumar Deep Dhar]
+- Kumar Deep Dhar
 
 ## License
 
